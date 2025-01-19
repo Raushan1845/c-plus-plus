@@ -1,0 +1,28 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+int main() {
+    // use of awitch case
+     //write a program to give a rating to a restaurant 
+    
+    // Write C++ code here
+    int rating ;
+    cout <<"enter ur rating"<<endl;
+    cin>>rating ;
+    switch (rating){
+        case 1 :
+        cout<<"your rating is 1"<<endl ;
+        break ;
+         case 2 :
+        cout<<"your rating is 2"<<endl ;
+        
+         case 3 :
+        cout<<"your rating is 3"<<endl ;
+        break;
+        default: 
+        cout<<"please give rating in range od 1 to 3"<<endl;
+        break;
+    }
+
+    return 0;
+}
