@@ -1,0 +1,28 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+// use of union and enum
+
+union employee {
+    int eid ;
+    float salary ;
+    char favchar;
+} ;
+
+int main() {
+    union employee ross ;
+        ross.eid = 1 ;
+        // ross. salary = 100000000 ;
+        // ross.favchar = 'r';
+        cout<<"ross eid is "<<ross.eid<<endl ;
+       // cout<<"ross salary is "<<ross.salary<<endl ;
+        // cout<<"ross favchar is "<<ross.favchar<<endl ;
+        enum meal { breakfast , lunch , dinner};
+        cout<<breakfast<<endl;
+        cout<<lunch<<endl;
+        cout<<dinner<<endl;
+        // another way
+        meal m = breakfast;
+        cout<<m<<endl;
+    return 0;
+}
