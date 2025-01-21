@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+// use of default argument 
+
+int tax(  int money , float rate= 1.5){ // here rate is set is set default to 1.5
+    return money*rate ;                  //default argument is always set extreme                                     right
+}
+
+
+int main() {
+    int m ;
+    cout<<"enter the amount of money" ;
+    cin>> m;
+    cout<< "the total amount will be" <<tax(m); // even when we had not give rate as input is choosess 1.5 as fefault rate 
+    
+    return 0;
+}
