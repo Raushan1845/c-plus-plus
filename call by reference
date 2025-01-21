@@ -1,0 +1,21 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+// use of call by value, call by reference pointer ,  call by reference variable
+// void swap(int *a , int *b){   // using call by reference pointer
+//     int temp = *a ;
+//     *a= *b;
+//     *b = temp ;
+    void swap(int &a , int &b){
+    int temp = a ;             // using call by reference variable
+    a= b;
+    b = temp ;
+}
+
+int main() {
+    int x=4,y =5 ;
+     //swap(&x,&y);   //using call by reference pointer
+    swap( x,y);    //using call by reference variable
+    cout<<x<<y<<endl;
+    return 0;
+}
