@@ -1,0 +1,16 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+// basic code for illustration of function overloading
+int vol(int a){
+    return a*a*a ;
+}
+int vol(int r, int h){
+    return (3.14 *r*r*h) ;
+}
+int main() {
+    // Write C++ code here
+cout<<"the volume of cube is :"<<vol(5)<<endl;
+cout<<"the volume of cylinder is :"<<vol(2,3)<<endl;
+    return 0;
+}
