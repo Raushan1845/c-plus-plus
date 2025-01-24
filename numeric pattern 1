@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std ;
+// numerical pattern
+int main()
+{
+	int n ;
+	cout <<"enter the number" <<endl ;
+	cin>> n;
+	int row,i ;
+	int no ;
+	for(row=1 ; row<=n ; row++) {
+		//printing the spaces
+		for( i=1 ; i<= (n-row) ; i++ ) {
+			cout <<' ' ;
+		}
+		// printing the numbers
+		no = 1 ;
+		for( i =1 ; i <=2*row-1 ; i++) {
+			cout<<no ;
+			no++;
+		}
+		cout<<endl ;
+	}
+	return 0;
+}
