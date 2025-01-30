@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std ;
+// code for linear search
+int a[] = {2,4,7,8,3,1,32};
+int n = 7;
+int key = 1 ;
+int i;
+int main()
+{
+    for(int i =0;i<n ; i++){
+        if(a[i] == key){
+            cout<<"key found at index"<<i ;
+            break;
+        }
+    }
+    if (   i >= n ){
+        cout<<"key not found"<<endl;
+    }
+    return 0;
+}
