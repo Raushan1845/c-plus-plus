@@ -1,0 +1,23 @@
+#include <iostream>
+#include <algorithm> // For max() function
+using namespace std;
+int main() {
+    // Declare variables to hold the input numbers
+    double num1, num2, num3;
+
+    // Input: three numbers
+    cout << "Enter the first number: ";
+    cin >> num1;
+    cout << "Enter the second number: ";
+    cin >> num2;
+    cout << "Enter the third number: ";
+    cin >> num3;
+
+    // Find the largest number
+    double largest = max({num1, num2, num3});
+
+    // Output the largest number
+    cout << "The largest number is: " << largest << endl;
+
+    return 0;
+}
