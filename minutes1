@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int i ,n ;
+int operation(int a , int b){
+    if(a<b){
+        return operation(b,a);} 
+    else {
+        return a;}
+}
+int main (){
+    int a ,b;
+    a=10;
+    b=23;
+ cout<< operation( a,b);
+  return 0;
+}
+
+// it will return max
