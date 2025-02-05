@@ -1,0 +1,16 @@
+// C++ program to convert a string to uppercase
+// using std::transform()
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s = "Geeksforgeeks";
+
+    // Using transform with toupper to convert
+  	// string to uppercase
+    transform(s.begin(), s.end(), s.begin(),
+              ::toupper);
+
+    cout << s;
+    return 0;
+}
