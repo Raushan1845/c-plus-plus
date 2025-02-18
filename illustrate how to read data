@@ -1,0 +1,29 @@
+// C++ program to illustrate how to read data
+// from a text file
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    // Open the text file named "input.txt"
+    ifstream f("input.txt");
+
+    // Check if the file is successfully opened
+    if (!f.is_open()) {
+        cerr << "Error opening the file!";
+        return 1;
+    }
+
+    // String variable to store the read data
+    string s;
+
+    // Read each line of the file and print it to the
+    // standard output stream till the whole file is
+  	// completely read
+    while (getline(f, s))
+        cout << s << endl;
+
+    // Close the file
+    f.close();
+    return 0;
+}
